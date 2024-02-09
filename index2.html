@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMAScript</title>
+</head>
+<body>
+    <h1>Const</h1>
+    <script type="text/javascript">
+        const pizza = true;
+        pizza = false;
+        // let pizza = false; 
+        console.log(pizza);
+    </script>
+
+     <!-- const declaration declares block-scoped local variables. The value of a constant can't be changed through reassignment using the assignment operator, but if a constant is an object, its properties can be added, updated, or removed.(EX: Pizza can't be false because its already true) -->
+     
+     <!-- //*NOTE: When declaring wtih let you get an uncaught syntax error saying "Identifier 'pizza' has already been decleared and line 11" -->
+</body>
+</html>

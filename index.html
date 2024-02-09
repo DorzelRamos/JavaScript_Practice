@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMA Script Practice</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <style>
+        #box {
+            display: flex;
+            justify-content: space-around;
+        }
+        #box > div {
+            height: 5em;
+            width: 5em;
+            background-color: purple;
+        }
+    </style>
+
+    <h1>Let</h1>
+    <div id="box"></div>
+    <script type="text/javascript">
+        var div;
+        var box = document.getElementById("box");
+
+        for (let i=0; i<5; i++) {
+            div = document.createElement("div");
+            div.onclick = function() {
+                alert("This is box #" + i);
+            }
+            box.appendChild(div);
+        }
+    </script>
+    
+    <!-- var is a statement that declares function-scoped or globally-scoped variables, optionally initializing each to a value. (EX: only says 5 when u click on a purple block) -->
+
+    <!-- let decleration declares re-assignable, block-scoped local variables, optionally initializing each to a value. (EX: counts the number of purple blocks in order when clicked) -->
+
+<!-- <script src="js/script.js"></script> -->
+</body>
+</html>
